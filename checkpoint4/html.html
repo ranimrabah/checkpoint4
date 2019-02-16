@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>  Checkpoint 4 </title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<button onclick="bolden()"type="button">Bold</button>
+<br />
+<button onclick="italica()" type="button">Italic</button>
+<br />
+<button onclick="under()" type="button">underlined</button>
+<br />
+	</div>
+	<div id="output-text">
+			<select id="fontSizeDD">
+					<option value='12'>12</option>
+					<option value='14'>14</option>
+					<option value='16'>16</option>
+					<option value='18'>18</option>
+					<option value='20'>20</option>
+					<option value='22'>22</option>
+					<option value='24'>24</option>
+					<option value='26'>26</option>
+				  </select>
+		<p>
+		We're going to make a program that looks like Microsoft Word.
+
+There will be one paragrah and a bunch of buttons.
+
+Each button will have an onclick attribute that will link to a different javascript function.  
+
+These buttons will have unique names and should do the following : 
+
+	-one button to make the paragraph bold
+
+	-one button to make the paragraph italic
+
+        -one button to make the paragraph underlined
+
+        -one dropdown list that will have a bunch of fonts, and when you click on one the paragraph’s font will change to it. 
+
+        - one dropdown list that will have a bunch of numbers (choose whatever you want) and when you click on it the paragraph’s font size changes to that.
+
+
+
+All these buttons will be in one line and above the paragraph.
+
+You are free to make the styling like you want.
+</p>
+	  </div>
+	  
+	  <select id="input-font" class="input"  onchange="changeFont (this);">
+			<option value="Times New Roman" selected ="selected">Times New Roman</option>
+			<option value="Arial">Arial</option>
+			<option value="Calibri">Calibri</option>
+			<option value="Cambria">Cambria</option>
+			<option value="Candara">Candara</option>
+			<option value="Constantia">Constantia</option>
+			<option value="Corbel">Corbel</option>
+			<option value="Ebrima">Ebrima</option>
+			<option value="Gabriola">Gabriola</option>
+			<option value="Malgun Gothic">Malgun Gothic	</option>
+			<option value="Marlett">Marlett</option>
+
+	  </select>
+	<p></p>
+<script src="main.js"></script>
+</body>
