@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>  ADA Student Feedback - Go My Code Students Feedback page</title>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="description" content="code ada feedback page" />
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+  <h1 ><span id="ada">ADA</span> Students feedback</h1>
+  <div class="wrapper">
+    <div class="left">
+      <img src="https://techcrunch.com/wp-content/uploads/2015/04/uncle-sam-we-want-you1-kopie_1.png?w=730&crop=1">
+      <h2>To give us feedback, because this course is made for you! Because it's all about you!</h2>
+      <p>Fill this form if you:</p>
+      <ul>
+        <li>- Find an error in the content or in the quizzes</li>
+        <li>- Have a feedback about instructors or the experience</li>
+        <li>- Have a suggestion on how to make the course better</li>
+      </ul>
+    </div>
+
+
+
+    <div class="right">
+      <h2>Email Us</h2>
+        <form id="displayform">
+          <input placeholder="name" type="name" id="name" value="" required>
+          <input placeholder="email" type="email" id="email" onblur="this.setAttribute('value' , this.value);" value="" required>
+          <span class="validationtext"> Please enter a valid email address.</span>
+          <input placeholder="location" id="location"  type="text" value="" required>
+          <div class="flex">
+            <textarea placeholder="message" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit"> Submit</button>
+        </form>
+    </div>
+  </div>
+</div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAl5h0dsSUcDlo-_8gBU-tit48aZpPPBcc",
+    authDomain: "test-284af.firebaseapp.com",
+    databaseURL: "https://test-284af.firebaseio.com",
+    projectId: "test-284af",
+    storageBucket: "test-284af.appspot.com",
+    messagingSenderId: "511873556055"
+  };
+  firebase.initializeApp(config);
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+<script src="main.js"></script>
