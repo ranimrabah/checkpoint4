@@ -1,0 +1,57 @@
+.cover {
+    width: 100%;
+    height: 300px;
+    background: url('../res/cover.jpg') center no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 2px grey;
+}
+.picture {
+    position: relative;
+    top: -100px;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px grey;
+}
+.social{
+    color: blue;
+    text-align: center;
+}
+.social i {
+    padding: 10px;
+}
+.social i:hover {
+    color: #666;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    color: #222
+}
+#name{
+     font-weight: bold;
+}
+#name:hover {
+    text-decoration: underline;
+}
+.title{
+    color: blue;
+}
+.interests i:hover {
+    color: #2196F3;;
+    transform: rotate(360deg);
+    transition: all .37s;
+}
+
+.projects img {
+    border-radius: 3.5px;
+    margin: 20px 0 20px 0;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
+    transition: box-shadow .3s;
+}
+.projects img:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transition: box-shadow .3s;
+}
